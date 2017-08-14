@@ -6,6 +6,7 @@
     "main": "index.js",
     "scripts": {
         "start": "react-scripts start",
+        "android": "npm run build && cordova emulate android",
         "build": "react-scripts build && npm run post",
         "post": "node post-build.js",
         "test": "react-scripts test --env=jsdom",
