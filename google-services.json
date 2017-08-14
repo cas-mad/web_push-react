@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "485685026367",
+    "firebase_url": "https://ion-mob.firebaseio.com",
+    "project_id": "ion-mob",
+    "storage_bucket": "ion-mob.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485685026367:android:5556ae24fa430ce9",
+        "android_client_info": {
+          "package_name": "ch.hsr.ionmob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485685026367-4htts1s1ttt2trc0c12acekssqp7hhe4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmrHs_AyVj4JktnAUQuoZBleVlTUcjt3U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485685026367:android:dba9f76d5a60aaf3",
+        "android_client_info": {
+          "package_name": "ch.hsr.cordova.react"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485685026367-4htts1s1ttt2trc0c12acekssqp7hhe4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmrHs_AyVj4JktnAUQuoZBleVlTUcjt3U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
