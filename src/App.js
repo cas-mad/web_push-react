@@ -12,8 +12,6 @@ class App extends Component {
 	}
 
 	componentDidMount() {
-		console.log('App did mount');
-
 		document.addEventListener('deviceready', () => {
 			FCMPlugin.onTokenRefresh((token) => {
 				console.log(token);
@@ -29,10 +27,6 @@ class App extends Component {
 				this.setState({messages: [...this.state.messages, JSON.stringify(data)]})
 			});
 		});
-	}
-
-	componentDidUnmount() {
-		console.log('App did unmount');
 	}
 
 	render() {
