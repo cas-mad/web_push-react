@@ -1,28 +1,38 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Matrix from './components/Matrix';
+import NotificationList from './components/NotificationList';
 
 /* global FCMPlugin */
 class App extends Component {
 
+	constructor(props) {
+		super(props);
+		this.state = {messages: []};
+	}
+
 	componentDidMount() {
+		console.log('App did mount');
 
 		document.addEventListener('deviceready', () => {
-			FCMPlugin.onTokenRefresh(function (token) {
+			FCMPlugin.onTokenRefresh((token) => {
 				console.log(token);
 			});
 
-			FCMPlugin.getToken(function (token) {
+			FCMPlugin.getToken((token) => {
 				console.log(token);
 			});
 
 			FCMPlugin.subscribeToTopic('general');
 
-			FCMPlugin.onNotification(function (data) {
-					alert(JSON.stringify(data));
+			FCMPlugin.onNotification((data) => {
+				this.setState({messages: [...this.state.messages, JSON.stringify(data)]})
 			});
 		});
+	}
+
+	componentDidUnmount() {
+		console.log('App did unmount');
 	}
 
 	render() {
@@ -32,7 +42,7 @@ class App extends Component {
 					<img src={logo} className="App-logo" alt="logo"/>
 					<h2>Welcome to React</h2>
 				</div>
-				<Matrix/>
+				<NotificationList messages={this.state.messages}/>
 			</div>
 		);
 	}
