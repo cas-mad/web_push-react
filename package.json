@@ -1,38 +1,38 @@
 {
-	"name": "react-cordova",
-	"displayName": "React & Cordova",
-	"version": "1.0.0",
-	"description": "Combine Create-React-App and Cordova.",
-	"main": "index.js",
-	"scripts": {
-		"start": "react-scripts start",
-		"android": "npm run build && cordova emulate android",
-		"build": "react-scripts build && npm run post",
-		"post": "node post-build.js",
-		"test": "react-scripts test --env=jsdom",
-		"eject": "react-scripts eject"
-	},
-	"homepage": ".",
-	"author": "Tobias Büchel",
-	"license": "MIT",
-	"dependencies": {
-		"cordova-android": "^6.2.3",
-		"cordova-plugin-fcm": "^2.1.2",
-		"cordova-plugin-whitelist": "^1.3.2",
-		"react": "^15.6.1",
-		"react-dom": "^15.6.1",
-		"react-scripts": "1.0.11"
-	},
-	"devDependencies": {
-		"rimraf": "^2.6.1"
-	},
-	"cordova": {
-		"plugins": {
-			"cordova-plugin-whitelist": {},
-			"cordova-plugin-fcm": {}
-		},
-		"platforms": [
-			"android"
-		]
-	}
+    "name": "react-cordova",
+    "displayName": "React & Cordova",
+    "version": "1.0.0",
+    "description": "Combine create-react-app and Cordova with push notifications.",
+    "main": "index.js",
+    "scripts": {
+        "start": "react-scripts start",
+        "android": "npm run build && cordova run android",
+        "build": "react-scripts build && npm run post",
+        "post": "node post-build.js",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    },
+    "homepage": ".",
+    "author": "Tobias Büchel",
+    "license": "MIT",
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-plugin-fcm": "^2.1.2",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "react": "^15.6.1",
+        "react-dom": "^15.6.1",
+        "react-scripts": "1.0.11"
+    },
+    "devDependencies": {
+        "rimraf": "^2.6.1"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-fcm": {}
+        },
+        "platforms": [
+            "android"
+        ]
+    }
 }
